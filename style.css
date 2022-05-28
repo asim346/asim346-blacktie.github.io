@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --bgimg: url(assets/546539.webp);
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -15,7 +19,7 @@ body {
 }
 
 .bg {
-    background-image: url(assets/546539.webp);
+    background-image: var(--bgimg);
     background-size: cover;
     font-family: Impact;
     font-size: 22px;
@@ -85,14 +89,14 @@ button {
     font-weight: bolder;
     padding: 25px;
     margin: 200px 150px;
-    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 1.2);
+    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.8);
     transition: box-shadow 0.2s;
     cursor: pointer;
 }
 
 button:hover {
     background-color: rgb(175,175,175, 0.7);
-    box-shadow: 0px 8px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
 button:active {
