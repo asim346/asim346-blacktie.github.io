@@ -40,6 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
     width: 100%;
     margin: 50px 150px;
 }
@@ -75,7 +76,7 @@ a:active {
     font-size: 24px;
 }
 
-.text-home h1{
+.text-home h2{
     font-size: 64px;
 }
 
@@ -133,4 +134,41 @@ a:active {
 .about-text span {
     font-size: 16px;
     margin-bottom: 7vh;
+}
+
+.services-container {
+    display: flex;
+    align-content: space-between;
+    margin-left: 45%;
+    margin-top: -12%;
+}
+
+.services-container ul {
+    font-size: 25px;
+    margin-bottom: 2vh;
+    list-style-type: none;
+    margin-right: 8vw;
+}
+
+.services-list-prices {
+    transform: translateY(-2vh);
+    padding-top: 2vh;
+    border-right: 4px solid #FFF;
+}
+
+#sale {
+    color: #7da561;
+}
+
+.services-list #sale {
+    border-left: 2px solid #7da561;
+    padding-left: 10px;
+}
+
+.services-container h1 {
+    font-size: 42px;
+    position: relative;
+    right: 15vw;
+    bottom: 2vh;
+    transform: rotate(0.25turn);
 }
