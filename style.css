@@ -22,7 +22,9 @@ body {
 
 .bg {
     background-image: var(--bghome);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20vw 20vh;
     font-size: 22px;
     height: 100vh;
     letter-spacing: 2px;
@@ -81,7 +83,7 @@ a:active {
 }
 
 .text-home button {
-    background-color: rgb(175,175,175, 0.45);
+    background-color: rgb(175,175,175, 0.4);
     border: none;
     border-radius: 30px;
     color: white;
@@ -96,12 +98,12 @@ a:active {
 }
 
 .text-home button:hover {
-    background-color: rgb(175,175,175, 0.7);
+    background-color: rgb(175,175,175, 0.5);
     box-shadow: 0px 8px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
 .text-home button:active {
-    background-color: rgb(175,175,175, 0.9);
+    background-color: rgb(175,175,175, 0.7);
 }
 
 .about-container {
