@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-SemiBold.ttf) format('truetype');
+}
+
 :root {
     --bghome: url(assets/546539.webp);
     --bgabout: url(assets/3337631.webp);
