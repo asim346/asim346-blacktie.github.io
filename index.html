@@ -10,23 +10,41 @@
 </head>
 <body>
     <div class="bg">
-        <header>
+        <nav>
+
             <div class="logo-header">
                 <img src="assets/logo.webp" alt="Black Tie Climic" id="logo">
             </div>
 
-                <nav>
-                    <ul class="menu-container">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">REVIEWS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="#" id="last">APPOINTMENT</a></li>
-                    </ul>
-                </nav>
-        </header>
+
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#" id="last">APPOINTMENT</a></li>
+                </ul>
+
+
+                    <button class="list">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </button>
+        </nav>
+
+        <script>
+            const mobileNav = document.querySelector('ul');
+            const listIcon = document.querySelector('.list');
+        
+                listIcon.addEventListener('click', function(){
+                    mobileNav.classList.toggle('active');
+                })
+        </script>
+
+
 
         <main>
             <div class="text-home">
@@ -53,52 +71,52 @@
             </div>
             <div class="services-container">
                 <div class="services-list">
-                    <ul>
+                    <ol>
                         <li>DENTISTRY</li>
                         <li>DEMATOLOGY</li>
                         <li>PARASITE PREVENTION</li>
                         <li>DIET AND NUTRITION</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li id="sale">HEALTH SCREENING</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li>MICROCHIP IDENTIFICATION</li>
                         <li>RADIOLOGY</li>
                         <li>SURGERY</li>
                         <li>WELLNESS FOR ALL LIFE STAGES</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li>IN-HOME MEDICAL</li>
                         <li>PET SCHUTTLE</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li>GROOMING</li>
-                    </ul>
+                    </ol>
                 </div>
                 <div class="services-list-prices">
-                    <ul>
+                    <ol>
                         <li>70$</li>
                         <li>70$</li>
                         <li>30$</li>
                         <li>70$</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li id="sale">60$</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li>30$</li>
                         <li>100$</li>
                         <li>120$</li>
                         <li>80$</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li>100$</li>
                         <li>50$</li>
-                    </ul>
-                    <ul>
+                    </ol>
+                    <ol>
                         <li>90$</li>
-                    </ul>
+                    </ol>
                 </div>
                 <h1>SERVICES</h1>
             </div>

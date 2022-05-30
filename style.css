@@ -23,6 +23,7 @@ body {
     color: white;
     font-family: 'Dosis';
     font-weight: bold;
+    font-size: 10px;
 }
 
 .bg {
@@ -35,37 +36,39 @@ body {
     letter-spacing: 2px;
 }
 
-header {
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .logo-header {
-    margin: 50px 75px;
+    width: 25%;
+    margin: 5vh 0 2vh 8vh;
 }
 
-.menu-container {
+ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     list-style-type: none;
-    width: 100%;
-    margin: 50px 150px;
+    width: 50%;
+    margin-right: 18vw;
 }
 
 #logo {
-    width: 8vw;
+    width: 6.6em;
 }
 
 #last {
     border: none;
 }
 
-.menu-container a {
+ul a {
     color: rgb(240, 240, 240);
     font-size: 16px;
     text-decoration: none;
-    margin-left: 25px;
-    padding-right: 25px;
+    padding: 0 1.5em;
     border-right: solid 1px white;
 }
 
@@ -75,6 +78,68 @@ a:hover {
 
 a:active {
     color: rgb(175,175,175, 0.7);
+}
+
+.list {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-right: 8vw;
+}
+
+.line {
+    width: 2.5em;
+    height: .3em;
+    background-color: rgb(240, 240, 240);
+    margin: .6em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+    .list {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+    ul {
+        position: absolute;
+        top: 13vh;
+        right: 0;
+        margin-right: 3.5vw;
+        height: 50vh;
+        width: auto;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(77, 77, 77, 0.2);
+        border-radius: 15px;
+        padding: .2em;
+        opacity: 0;
+    }
+
+    ul.active {
+        opacity: 1;
+    }
+
+    ul a {
+        border: none;
+        padding: 15px;
+    }
+
+    ul li {
+        box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.8);
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        margin-top: 4vh;
+        width: 100%;
+    }
 }
 
 .text-home {
@@ -150,7 +215,7 @@ a:active {
     margin-top: -12%;
 }
 
-.services-container ul {
+.services-container ol {
     font-size: 25px;
     margin-bottom: 2vh;
     list-style-type: none;
@@ -185,7 +250,8 @@ footer {
     flex-direction: column;
     align-items: center;
     transform: translateY(25vh);
-    margin-bottom: 18vw
+    margin-bottom: 18vw;
+    font-size: 16px;
 }
 
 footer img {
