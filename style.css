@@ -105,6 +105,11 @@ a:active {
         transition: .3s ease-in-out;
     }
 
+    .list.active .line {
+        transform: rotate(180deg);
+        background-color: rgba(100, 100, 100, 0.45);
+    }
+
     ul {
         position: absolute;
         top: 13vh;
@@ -114,7 +119,6 @@ a:active {
         width: auto;
         flex-direction: column;
         text-align: center;
-        background-color: rgba(18, 18, 18, 0.5);
         border-radius: 15px;
         padding: .2em;
         transform: translate(300%);
@@ -122,7 +126,7 @@ a:active {
 
     ul.active {
         transform: translate(0%);
-        transition: transform 0.3s linear;
+        transition: transform 0.3s ease-out;
     }
 
     ul a {
@@ -131,7 +135,7 @@ a:active {
     }
 
     ul li {
-        box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 12px 0 rgba(255, 255, 255, 0.1);
         padding-bottom: 5px;
         border-radius: 10px;
     }
