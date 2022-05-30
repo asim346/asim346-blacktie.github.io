@@ -24,6 +24,7 @@ body {
     font-family: 'Dosis';
     font-weight: bold;
     font-size: 10px;
+    overflow-x: hidden;
 }
 
 .bg {
@@ -113,14 +114,15 @@ a:active {
         width: auto;
         flex-direction: column;
         text-align: center;
-        background-color: rgba(77, 77, 77, 0.2);
+        background-color: rgba(18, 18, 18, 0.5);
         border-radius: 15px;
         padding: .2em;
-        opacity: 0;
+        transform: translate(300%);
     }
 
     ul.active {
-        opacity: 1;
+        transform: translate(0%);
+        transition: transform 0.3s linear;
     }
 
     ul a {
@@ -136,9 +138,12 @@ a:active {
 }
 
 @media only screen and (max-width: 600px) {
-    ul {
-        margin-top: 4vh;
-        width: 100%;
+    .list {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
     }
 }
 
