@@ -1,3 +1,5 @@
+/* General settings */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,6 +28,8 @@ body {
     font-size: 10px;
     overflow-x: hidden;
 }
+
+/* Heading settings */
 
 .bg {
     background-image: var(--bghome);
@@ -141,7 +145,7 @@ a:active {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
     .list {
         display: none;
     }
@@ -154,16 +158,22 @@ a:active {
         width: auto;
         margin: 5vh auto;
     }
+
+    #logo {
+        width: 6em;
+    }
 }
+
+/* Home settings */
 
 .text-home {
     letter-spacing: 1px;
-    margin: 100px 250px;
-    font-size: 24px;
+    margin: 10vh 25vh;
+    font-size: 1.5rem;
 }
 
 .text-home h2{
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 .text-home button {
@@ -171,11 +181,11 @@ a:active {
     border: none;
     border-radius: 30px;
     color: white;
-    font-size: 16px;
+    font-size: 62%;
     font-family: 'Segoe UI';
     font-weight: bolder;
-    padding: 25px;
-    margin: 200px 150px;
+    padding: 1rem;
+    margin: 15% 10%;
     box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.8);
     transition: box-shadow 0.4s;
     cursor: pointer;
@@ -189,6 +199,34 @@ a:active {
 .text-home button:active {
     background-color: rgb(175,175,175, 0.7);
 }
+
+@media only screen and (max-width: 1200px) {
+    .text-home {
+        margin: 15vh 10vw;
+        font-size: 1rem;
+    }
+
+    .text-home h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .text-home {
+        margin: auto 10vw;
+        font-size: 0.5rem;
+    }
+
+    .text-home h2 {
+        font-size: 1rem;
+    }
+
+    .text-home button {
+        padding: 0.5rem;
+    }
+}
+
+/* About setting */
 
 .about-container {
     background-image: var(--bgabout);
