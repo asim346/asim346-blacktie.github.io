@@ -299,16 +299,6 @@ a:active {
     transform: rotate(0.25turn);
 }
 
-@media only screen and (max-width: 720px) {
-    .services-list-prices {
-        border-right: none;
-    }
-    
-    .services-container h1 {
-        display: none;
-    }
-}
-
 /* Footer settings */
 
 footer {
