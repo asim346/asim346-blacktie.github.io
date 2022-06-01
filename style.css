@@ -126,6 +126,7 @@ a:active {
         border-radius: 15px;
         padding: .2em;
         transform: translate(300%);
+        clear: both;
     }
 
     ul.active {
@@ -211,20 +212,11 @@ a:active {
     }
 }
 
-@media only screen and (max-width: 720px) {
-    .text-home {
-        margin: auto 10vw;
-        font-size: 0.5rem;
-    }
+/* Container cat */
 
-    .text-home h2 {
-        font-size: 1rem;
-    }
-
-    .text-home button {
-        padding: 0.5rem;
-    }
-}
+.container-cat {
+    display: block;
+} 
 
 /* About setting */
 
@@ -233,9 +225,10 @@ a:active {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -36vw;
-    font-size: 22px;
+    font-size: 1.4rem;
     height: 100vh;
     letter-spacing: 2px;
+    margin-top: 7vh;
 }
 
 #logo2 {
@@ -248,7 +241,8 @@ a:active {
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    margin: 8% 45%;
+    position: relative;
+    left: 45%;
 }
 
 .about-text p {
@@ -256,8 +250,21 @@ a:active {
 }
 
 .about-text span {
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+.margin-style {
     margin-bottom: 7vh;
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-container {
+        font-size: 1.3rem;
+    }
+
+    .about-text span {
+        font-size: 0.9rem;
+    }
 }
 
 /* Services settings */
@@ -265,8 +272,7 @@ a:active {
 .services-container {
     display: flex;
     align-content: space-between;
-    margin-left: 40%;
-    margin-top: -12%;
+    transform: translate(40%, -40%);
 }
 
 .services-container ol {
@@ -294,9 +300,21 @@ a:active {
 .services-container h1 {
     font-size: 42px;
     position: relative;
-    right: 15vw;
+    right: 14vw;
     bottom: 2vh;
     transform: rotate(0.25turn);
+}
+
+@media only screen and (max-width: 1200px) {
+    .services-container {
+        transform: scale(90%);
+        position: relative;
+        left: 30%;
+    }
+
+    .services-container h1 {
+        right: 20vw;
+    }
 }
 
 /* Footer settings */
@@ -305,13 +323,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(25vh);
-    margin-bottom: 18vw;
+    margin-bottom: 2vw;
     font-size: 16px;
 }
 
 footer img {
-    width: 3vw;
+    width: 2.5vw;
     margin-bottom: 1vh;
     transform: rotate(45deg);
     animation: tools 1s linear infinite alternate;
