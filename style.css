@@ -299,9 +299,8 @@ a:active {
 
 .services-container h1 {
     font-size: 42px;
+    right: 6em;
     position: relative;
-    right: 14vw;
-    bottom: 2vh;
     transform: rotate(0.25turn);
 }
 
@@ -310,10 +309,6 @@ a:active {
         transform: scale(90%);
         position: relative;
         left: 30%;
-    }
-
-    .services-container h1 {
-        right: 20vw;
     }
 }
 
