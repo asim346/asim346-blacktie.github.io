@@ -8,7 +8,6 @@ let listIcon = document.querySelector('.list');
 
 
 
-document.getElementById("closebyhome").onclick = function() {closeNav()};
 document.getElementById("closebyabout").onclick = function() {closeNav()};
 document.getElementById("closebyservices").onclick = function() {closeNav()};
 document.getElementById("closebyteam").onclick = function() {closeNav()};
