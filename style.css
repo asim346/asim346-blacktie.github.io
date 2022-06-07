@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -71,6 +72,7 @@ ul {
 
 ul a {
     color: rgb(240, 240, 240);
+    cursor: pointer;
     font-size: 16px;
     text-decoration: none;
     padding: 0 1.5em;
@@ -78,7 +80,7 @@ ul a {
 }
 
 a:hover {
-    color: rgb(175,175,175, 0.45);
+    color: rgb(175,175,175, 0.5);
 }
 
 a:active {
